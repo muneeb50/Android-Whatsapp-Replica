@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/custom_bar_image"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/default_avatar"
+        android:layout_alignParentLeft="true"
+        android:onClick="btnClick"
+        />
+
+    <TextView
+        android:id="@+id/custom_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/custom_bar_image"
+        android:text="Display Name"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:onClick="btnClick"
+        />
+
+    <TextView
+        android:id="@+id/custom_bar_seen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/custom_bar_image"
+        android:layout_below="@+id/custom_bar_title"
+        android:text="Last Seen"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        />
+
+    <ImageView
+
+        android:id="@+id/custom_bar_share_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/custom_bar_image"
+ android:layout_toLeftOf="@id/custom_bar_delete_btn"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@android:drawable/ic_menu_share"
+        android:onClick="btnClick"
+        />
+
+    <ImageView
+
+        android:id="@+id/custom_bar_delete_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/custom_bar_image"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/custom_bar_forward_btn"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        android:onClick="btnClick"
+        />
+
+    <ImageView
+
+        android:id="@+id/custom_bar_copy_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/custom_bar_image"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/custom_bar_delete_btn"
+        app:srcCompat="?attr/actionModeCopyDrawable"
+        android:onClick="btnClick"
+        />
+
+    <ImageView
+
+        android:id="@+id/custom_bar_forward_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/custom_bar_image"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_share_white_24dp"
+        android:onClick="btnClick"
+        />
+
+</RelativeLayout>

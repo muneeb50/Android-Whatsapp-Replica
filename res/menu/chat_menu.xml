@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/search_chat"
+        android:title="Search"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/clear_chat"
+        android:title="Clear Chat"
+        app:showAsAction="never"/>
+
+</menu>

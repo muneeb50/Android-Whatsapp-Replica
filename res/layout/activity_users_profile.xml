@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkColor"
+    android:layout_gravity="center_horizontal"
+    tools:context="test.example.com.mychatapp.UsersProfileActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/profile_user_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    <TextView
+        android:id="@+id/profile_user_OnlineStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/profile_user_image"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="70dp"
+        android:text="Last Seen"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/profile_user_image"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/profile_user_toolbar"
+        app:srcCompat="@drawable/default_avatar"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/profile_user_displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_user_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Display Name"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/profile_user_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_user_displayName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Current User Status"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/profile_user_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_user_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Phone Number"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+
+    <ListView
+        android:id="@+id/mediaShared"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/profile_user_phone"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

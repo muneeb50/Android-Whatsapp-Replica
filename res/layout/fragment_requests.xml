@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.example.com.mychatapp.RequestsFragment">
+<!--
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/requests_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+-->
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/ContactsSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search"/>
+        <ListView
+            android:padding="8dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/ContactsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@android:drawable/ic_input_add" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>
